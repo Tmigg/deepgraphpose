@@ -1,0 +1,32 @@
+# dgp-ubuntu-GPU.yaml
+#
+# DGP environment for Ubuntu (tested on 18.04)
+#
+# install: conda env create -f dgp-ubuntu-GPU.yaml
+# update:  conda env update -f dgp-ubuntu-GPU.yaml
+
+# Edited from
+#DeepLabCut2.0 Toolbox (deeplabcut.org)
+#© A. & M. Mathis Labs
+#https://github.com/AlexEMG/DeepLabCut
+#Please see AUTHORS for contributors.
+
+#https://github.com/AlexEMG/DeepLabCut/blob/master/AUTHORS
+#Licensed under GNU Lesser General Public License v3.0
+
+name: dgp
+channels:
+  - anaconda-fusion
+  - conda-forge
+  - defaults
+dependencies:
+  - pip
+  - python=3.7.17
+  - packaging
+  - imgaug
+  - wxpython=4.0.3
+  - pytables=3.4.3
+  - matplotlib=3.0.3
+  - pip:
+    - opencv-python-headless==3.4.5.20
+    - tensorflow-gpu==1.13.1
